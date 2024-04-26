@@ -6,6 +6,8 @@ import Thanks from './components/Thanks';
 import './App.css';
 
 function App() {
+  const formComponents = [<UserForm />, <ReviewForm />, <Thanks />];
+
   return (
     <div className='App'>
       <div className='header'>
