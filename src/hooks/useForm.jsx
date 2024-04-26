@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function useForm() {
+function useForm(steps) {
     const [currentStep, setCurrentStep] = useState(0);
 
     return {
