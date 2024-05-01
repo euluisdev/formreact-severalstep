@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   const formComponents = [<UserForm />, <ReviewForm />, <Thanks />];
-  const { currentStap, currentComponent } = useForm(formComponents);
+  const { currentStep, currentComponent } = useForm(formComponents);
 
   return (
     <div className='App'>
