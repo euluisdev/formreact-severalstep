@@ -6,7 +6,7 @@ function useForm(steps) {
     function changeStep (index, e) {
         e.preventDefault();
 
-        if (i < 0 | i >= steps.length) return;
+        if (index < 0 | index >= steps.length) return;
 
         setCurrentStep(index)
     }
