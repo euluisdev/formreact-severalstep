@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   const formComponents = [<UserForm />, <ReviewForm />, <Thanks />];
-  const { currentStep, currentComponent } = useForm(formComponents);
+  const { currentStep, currentComponent, changeStep } = useForm(formComponents);
 
   return (
     <div className='App'>
@@ -22,10 +22,10 @@ function App() {
       </div>
       <div className="form-container">
         <p>etapas</p>
-        <form>
+        <form onClick={(e) => changeStep(currentStep +1, e)}>
           <div className="inputs-container">{currentComponent}</div>
           <div className="actions">
-            <button type='button'>
+            <button type='button' onClick={() => changeStep(currentStep - 1)}>
               <GrFormPrevious />
               <span>Voltar</span>
             </button>
