@@ -4,7 +4,7 @@ function useForm(steps) {
     const [currentStep, setCurrentStep] = useState(0);
 
     function changeStep (index, e) {
-        e.preventDefault();
+        if (e) e.preventDefault();
 
         if (index < 0 | index >= steps.length) return;
 
