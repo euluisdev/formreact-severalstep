@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 function useForm(steps) {
     const [currentStep, setCurrentStep] = useState(0);
 
-    function changeStep (index, e) {
+    function changeStep (i, e) {
         if (e) e.preventDefault();
 
-        if (index < 0 | index >= steps.length) return;
+        if (i < 0 || i >= steps.length) return;
 
-        setCurrentStep(index)
+        setCurrentStep(i);
     }
 
     return {
