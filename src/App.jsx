@@ -29,10 +29,19 @@ function App() {
               <GrFormPrevious />
               <span>Voltar</span>
             </button>
-            <button type='submit'>
-              <span>Avançar</span>
-              <GrFormNext />
-            </button>
+            {
+              !isLastStep ? (
+                <button type='submit'>
+                <span>Avançar</span>
+                <GrFormNext />
+              </button>
+              ) : (
+                <button type='button'>
+                <span>Enviar</span>
+                <GrFormNext />
+              </button>
+              )
+            }
           </div>
         </form>
       </div>
