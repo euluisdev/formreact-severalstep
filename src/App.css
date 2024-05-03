@@ -11,3 +11,49 @@
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
 } 
+
+                /* forms */
+
+.form-container {
+    max-width: 610px;
+    margin: 0 auto;
+    background-color: gray;
+    padding: 1.8rem;
+    box-shadow: gray 0px 5px 30px 10px;
+    border-radius: 15px;
+}
+
+.form-container form {
+    max-width: 410px;
+    margin: 0 auto;
+}
+
+.inputs-container {
+    min-height: 350px;
+    margin-top: 1rem;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    margin-bottom: 4rem;
+}
+
+label {
+    font-weight: bold;
+    color: hsla(320, 100%, 63%, 0.432);
+    font-size: 1.2rem;
+}
+
+input, textarea {
+    padding: 0.6rem;
+    border: none;
+    border-radius: 3px;
+    box-shadow: rgb(77, 76, 76) 0px 6px 30px 10px;
+}
+
+textarea {
+    height: 130px;
+}
+
