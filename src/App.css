@@ -5,6 +5,7 @@
 .header {
     text-align: center;
     margin-bottom: 2rem;
+    color: #ff00aa;
 }
 
 .header h2 {
@@ -51,9 +52,37 @@ input, textarea {
     border: none;
     border-radius: 3px;
     box-shadow: rgb(77, 76, 76) 0px 6px 30px 10px;
+    color: rgb(0, 0, 0);
 }
 
 textarea {
     height: 130px;
 }
 
+        /* actions */
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.3rem;
+}
+
+.actions button {
+    font-size: 1rem;
+    padding: .6rem 1.2rem;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 2px;
+    gap: 0.5rem;
+    cursor: pointer;
+    background-color: #f9fafc;
+    font-weight: 500;
+    color: #ff00aa;
+    transition: 1s;
+}
+
+.actions button:hover {
+    color: #f9fafc;
+    background-color: hsla(320, 100%, 63%, 0.432);;
+} 
