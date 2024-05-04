@@ -23,7 +23,7 @@ function App() {
         </p>
       </div>
       <div className="form-container">
-        <p><Steps currentStep={currentStep} /></p> {/* passado a props vinda do hook */}
+        <Steps currentStep={currentStep} /> {/* passado a props vinda do hook */}
         <form onSubmit={(e) => changeStep(currentStep + 1, e)}>
           <div className="inputs-container">{currentComponent}</div>
           <div className="actions">
