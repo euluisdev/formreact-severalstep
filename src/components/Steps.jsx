@@ -1,6 +1,6 @@
-import React from 'react'
+import './Steps.css';
 
-function Steps() {
+function Steps({ currentStep }) {
   return (
     <div>
       <p>Steps component</p>
