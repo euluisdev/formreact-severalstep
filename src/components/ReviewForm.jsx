@@ -1,8 +1,21 @@
-import React from "react";
+import { 
+    BsFillEmojiHeartEyesFill, 
+    BsFillEmojiSmileFill, 
+    BsFillEmojiNeutralFill, 
+    BsFillEmojiFrownFill
+} from "react-icons/bs";
+
 
 const ReviewForm = () => {
     return (
-        <div>Review Form</div>
+        <div className="review-form">
+            <div className="form-control score-container">
+                <label className="radio-container">
+                    <input type="radio" value='unsatisfied' name="review" required />
+                    <p>Insatisfeito</p>
+                </label>
+            </div>
+        </div>
     )
 }
 
