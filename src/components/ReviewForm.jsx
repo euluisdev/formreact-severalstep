@@ -28,14 +28,14 @@ const ReviewForm = () => {
                     <p>Satisfeito</p>
                 </label>
                 <label className="radio-container">
-                    <input type="radio" value='very-satisfied' name="review" required checked />
+                    <input type="radio" value='very-satisfied' name="review" required />
                     <BsFillEmojiHeartEyesFill />
                     <p>Muito ssatisfeito</p>
                 </label>
             </div>
             <div className="form-control">
                 <label htmlFor="comment"><p>Comentário:</p></label>
-                <textarea name="comment" id="comment" placeholder="Conte como foi sua expriência...">
+                <textarea name="comment" id="comment" placeholder="Conte como foi sua expriência..." required>
                 </textarea>
             </div>
         </div>
