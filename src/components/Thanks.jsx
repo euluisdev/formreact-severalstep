@@ -1,4 +1,11 @@
-import React from "react";
+import { 
+    BsFillEmojiHeartEyesFill, 
+    BsFillEmojiSmileFill, 
+    BsFillEmojiNeutralFill, 
+    BsFillEmojiFrownFill
+} from "react-icons/bs";
+
+import './Thanks.css';
 
 const Thanks = () => {
     return (
