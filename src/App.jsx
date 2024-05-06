@@ -12,10 +12,17 @@ import useForm from './hooks/useForm';
 
 import './App.css';
 
+const formFieldHandler = {
+  name: '', 
+  email: '', 
+  review: '', 
+  comment: '', 
+}
+
 function App() {
   const [data, setData] = useState();
 
-  const formComponents = [<UserForm />, <ReviewForm />, <Thanks />];
+  const formComponents = [<UserForm data={data} />, <ReviewForm data={data} />, <Thanks data={data} />];
   const { currentStep, currentComponent, changeStep, isLastStep, isFirstStep } = useForm(formComponents);
 
   return (
