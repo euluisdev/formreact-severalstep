@@ -5,12 +5,16 @@ import ReviewForm from './components/ReviewForm';
 import Thanks from './components/Thanks';
 import Steps from './components/Steps';
 
+import { useState } from 'react';
+
 //  Hooks
 import useForm from './hooks/useForm';
 
 import './App.css';
 
 function App() {
+  const [data, setData] = useState();
+
   const formComponents = [<UserForm />, <ReviewForm />, <Thanks />];
   const { currentStep, currentComponent, changeStep, isLastStep, isFirstStep } = useForm(formComponents);
 
