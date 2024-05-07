@@ -8,10 +8,10 @@ import {
 import './Thanks.css';
 
 const emojiDataHandler = {
-    unsatisfield: <BsFillEmojiFrownFill />, 
+    unsatisfied: <BsFillEmojiFrownFill />, 
     neutral: <BsFillEmojiNeutralFill />, 
-    satisfield: <BsFillEmojiSmileFill />, 
-    very_satisfield: <BsFillEmojiHeartEyesFill />
+    satisfied: <BsFillEmojiSmileFill />, 
+    very_satisfied: <BsFillEmojiHeartEyesFill />
 }
 
 const Thanks = ({ data }) => {
@@ -24,12 +24,14 @@ const Thanks = ({ data }) => {
             <p>
                 Para concluir sua avaliação, basta clicar no botão Enviar, que se encontra abaixo.
             </p>
-            <h3>Um breve resumo da sua avaliação:</h3>
+            <h3>Um breve resumo da sua avaliação {data.name}:</h3>
             <p className="review-data">
                 <span>Satisfação com o produto:</span>
+                {emojiDataHandler[data.review]}
             </p>
             <p className="review-data">
                 <span>Comentário:</span>
+                {data.comment}
             </p>
         </div>
     )

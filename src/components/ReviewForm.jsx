@@ -42,9 +42,9 @@ const ReviewForm = ({ data, updateFieldHandler }) => {
                         value='satisfied' 
                         name="review" 
                         required 
-                        checked={data.review === 'satisfield'} 
-                        onChange={(e) => updateFieldHandler('satisfield', e.target.value)} 
-                        />
+                        checked={data.review === 'satisfied'} 
+                        onChange={(e) => updateFieldHandler('review', e.target.value)} 
+                    />
                     <BsFillEmojiSmileFill />
                     <p>Satisfeito</p>
                 </label>
@@ -56,7 +56,7 @@ const ReviewForm = ({ data, updateFieldHandler }) => {
                         required 
                         checked={data.review === 'very_satisfied'} 
                         onChange={(e) => updateFieldHandler('review', e.target.value)} 
-                        />
+                    />
                     <BsFillEmojiHeartEyesFill />
                     <p>Muito ssatisfeito</p>
                 </label>
