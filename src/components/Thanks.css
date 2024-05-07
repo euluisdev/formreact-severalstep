@@ -3,8 +3,12 @@
 }
 
 .thanks-container h2 {
-    margin-bottom: 1.3rem;
-    color: #ff00aa;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+.thanks-container h2 svg {
+    color: #fff;
+    margin-bottom: -0.3rem;
 }
 
 .thanks-container p {
@@ -14,7 +18,8 @@
 
 .thanks-container h3 {
     margin: 1.3rem 0;
-    color: #ff00aa;
+    color: #fff;
+    font-size: 1.3rem;
 }
 
 .review-data {
@@ -27,4 +32,26 @@
 
 .review-data span {
     font-weight: bold;
+}
+
+.review-data .show-emoji svg {
+    color: #ff00aa;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: -0.5rem;
+}
+
+.review-data .show-comment {
+    color: #ff00aa;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+/*     font-weight: lighter; */
+    background-color: #fff;
+}
+
+.thanks-container .show-name {
+    color: #ff00aa;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 1.2rem;
 }
