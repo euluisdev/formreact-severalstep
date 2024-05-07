@@ -7,10 +7,12 @@ const UserForm = ({ data, updateFieldHandler }) => {
                 <label htmlFor="name">Nome:</label>
                 <input 
                   type="text"
-                  name="text" 
+                  name="name" 
                   id="name" 
                   placeholder="Digite seu nome" 
                   required 
+                  value={data.name || ''} 
+                  onChange={(e) => updateFieldHandler('name', e.target.value)}
                   />
             </div>
             <div className="form-control">

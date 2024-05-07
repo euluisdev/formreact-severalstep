@@ -30,7 +30,9 @@ function App() {
 
   const formComponents = [
     <UserForm data={data} updateFieldHandler={updateFieldHandler} />, 
-    <ReviewForm data={data} updateFieldHandler={updateFieldHandler} />, <Thanks data={data} />];
+    <ReviewForm data={data} updateFieldHandler={updateFieldHandler} />, 
+    <Thanks data={data} />
+  ];
   const { currentStep, currentComponent, changeStep, isLastStep, isFirstStep } = useForm(formComponents);
 
   return (
