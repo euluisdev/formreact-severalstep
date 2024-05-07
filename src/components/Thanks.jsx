@@ -7,6 +7,13 @@ import {
 
 import './Thanks.css';
 
+const emojiDataHandler = {
+    unsatisfield: <BsFillEmojiFrownFill />, 
+    neutral: <BsFillEmojiNeutralFill />, 
+    satisfield: <BsFillEmojiSmileFill />, 
+    very_satisfield: <BsFillEmojiHeartEyesFill />
+}
+
 const Thanks = ({ data }) => {
     return (
         <div className="thanks-container">
