@@ -27,7 +27,7 @@ const Thanks = ({ data }) => {
             <h3>Um breve resumo da sua avaliação {data.name}:</h3>
             <p className="review-data">
                 <span>Satisfação com o produto:</span>
-                {emojiDataHandler[data.review]}
+                <span className="show-emoji">{emojiDataHandler[data.review]}</span>
             </p>
             <p className="review-data">
                 <span>Comentário:</span>
