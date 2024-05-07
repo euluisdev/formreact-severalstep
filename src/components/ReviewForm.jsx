@@ -63,7 +63,14 @@ const ReviewForm = ({ data, updateFieldHandler }) => {
             </div>
             <div className="form-control">
                 <label htmlFor="comment"><p>Comentário:</p></label>
-                <textarea name="comment" id="comment" placeholder="Conte como foi sua expriência..." required>
+                <textarea 
+                    name="comment" 
+                    id="comment" 
+                    placeholder="Conte como foi sua expriência..." 
+                    required 
+                    value={data.comment || ''}  
+                    onChange={(e) => updateFieldHandler('comment', e.target.value)}
+                >
                 </textarea>
             </div>
         </div>
