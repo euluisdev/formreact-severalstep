@@ -1,6 +1,6 @@
 import React from "react";
 
-const UserForm = ({ data }) => {
+const UserForm = ({ data, updateFieldHandler }) => {
     return (
         <div>
             <div className="form-control">
@@ -10,7 +10,7 @@ const UserForm = ({ data }) => {
                   name="text" 
                   id="name" 
                   placeholder="Digite seu nome" 
-                  /* required */ 
+                  required 
                   />
             </div>
             <div className="form-control">
@@ -20,7 +20,7 @@ const UserForm = ({ data }) => {
                   name="email" 
                   id="email" 
                   placeholder="Digite seu melhor e-mail" 
-                  /* required */ 
+                  required 
                   />
             </div>
         </div>
